@@ -1,7 +1,7 @@
 {
   "name": "@okja/chi-themes",
   "version": "0.1.0",
-  "description": "Pre-composed CSS themes",
+  "description": "Pre-composed CSS themes built on Chi Design System tokens",
   "type": "module",
   "license": "MIT",
   "publishConfig": {
