@@ -1,0 +1,20 @@
+/**
+ * Purple Theme - Creative
+ * Modern purple for creative/consumer applications
+ */
+
+/* Declare layer order */
+@layer reset, tokens, base;
+
+/* Reset layer */
+@import './reset.css' layer(reset);
+
+/* Tokens layer */
+@import '@okja/chi-tokens/dist/tokens.css';
+@import '@okja/chi-tokens/dist/colors/purple.css';
+
+/* Custom media queries */
+@import './internal/breakpoints.css';
+
+/* Base styles layer */
+@import './internal/base-styles.css' layer(base);

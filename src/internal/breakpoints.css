@@ -1,6 +1,5 @@
 /**
- * Gestalt Design System - Responsive Breakpoints
- * Following Material Design v3 Expressive breakpoint system exactly
+ * Chi Design System - Responsive Breakpoints
  * Based on window size classes: Compact → Medium → Expanded → Large
  */
 
@@ -9,7 +8,7 @@
 /* Medium: Mobile landscape & small tablets (601px-1294px) */
 @custom-media --medium (min-width: 600px);
 
-/* Expanded: Desktop/laptop (1295px+) - matches Material v3 exactly */
+/* Expanded: Desktop/laptop (1295px+) */
 @custom-media --expanded (min-width: 1295px);
 
 /* Large: Wide desktop - sidebar/subnav persistent (1440px+) */
