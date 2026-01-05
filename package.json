@@ -1,0 +1,41 @@
+{
+  "name": "@okja/chi-themes",
+  "version": "0.1.0",
+  "description": "Pre-composed CSS themes",
+  "type": "module",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    "./default.css": "./dist/default.css",
+    "./blue.css": "./dist/blue.css",
+    "./purple.css": "./dist/purple.css",
+    "./reset.css": "./dist/reset.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "build": "postcss 'src/themes/*.css' --dir dist --base src/themes && cp src/styles/reset.css dist/",
+    "check": "stylelint 'src/**/*.css'",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@okja/chi-tokens": "^0.4.0"
+  },
+  "devDependencies": {
+    "@csstools/postcss-light-dark-function": "^2.0.7",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-custom-media": "^11.0.6",
+    "postcss-import": "^16.1.1",
+    "postcss-nesting": "^13.0.2",
+    "stylelint": "^16.12.0",
+    "stylelint-config-standard": "^37.0.0"
+  }
+}

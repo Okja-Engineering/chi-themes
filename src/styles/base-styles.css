@@ -1,0 +1,221 @@
+/**
+ * Chi Design System - Base Styles
+ * Typography, spacing, and foundational styles using design system tokens
+ */
+
+/* Typography */
+body {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-3);
+  color: var(--color-on-surface);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Responsive body typography */
+@media screen and (width <= 600px) {
+  body {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  padding: 1px;
+  border-radius: var(--radius-xs);
+}
+
+a:hover {
+  color: var(--color-primary);
+  opacity: 0.9;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Paragraphs */
+p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+/* Code */
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.125rem 0.25rem;
+  border-radius: var(--radius-xs);
+  background: var(--color-surface-container-high);
+  color: var(--color-on-surface-variant);
+}
+
+pre {
+  font-family: var(--font-mono);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  background: var(--color-surface-container-high);
+  overflow-x: auto;
+}
+
+/* Lists */
+ul {
+  list-style: disc outside none;
+}
+
+ol {
+  list-style: decimal outside none;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-on-surface);
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin: 0;
+}
+
+@media screen and (width <= 600px) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+
+h2 {
+  font-size: 2.8125rem;
+  line-height: 3.25rem;
+  margin: 2rem 0;
+}
+
+@media screen and (width <= 600px) {
+  h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  margin: 1.5rem 0;
+}
+
+@media screen and (width <= 600px) {
+  h3 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 1rem 0;
+}
+
+h5 {
+  font-size: var(--font-size-3);
+  line-height: var(--line-height-3);
+  font-weight: var(--font-weight-medium);
+  margin: 1rem 0;
+}
+
+h6 {
+  font-size: var(--font-size-1);
+  line-height: var(--line-height-1);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-1);
+  margin: 1rem 0;
+}
+
+/* Form elements */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.38;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Elevation/Shadow utilities */
+.elevation-0 {
+  box-shadow: var(--shadow-0);
+}
+
+.elevation-1 {
+  box-shadow: var(--shadow-1);
+}
+
+.elevation-2 {
+  box-shadow: var(--shadow-2);
+}
+
+.elevation-3 {
+  box-shadow: var(--shadow-3);
+}
+
+.elevation-4 {
+  box-shadow: var(--shadow-4);
+}
+
+.elevation-5 {
+  box-shadow: var(--shadow-5);
+}

@@ -1,0 +1,24 @@
+/**
+ * Gestalt Design System - Responsive Breakpoints
+ * Following Material Design v3 Expressive breakpoint system exactly
+ * Based on window size classes: Compact → Medium → Expanded → Large
+ */
+
+/* Compact: Mobile portrait (0-599px) - no media query needed, mobile-first */
+
+/* Medium: Mobile landscape & small tablets (601px-1294px) */
+@custom-media --medium (min-width: 600px);
+
+/* Expanded: Desktop/laptop (1295px+) - matches Material v3 exactly */
+@custom-media --expanded (min-width: 1295px);
+
+/* Large: Wide desktop - sidebar/subnav persistent (1440px+) */
+@custom-media --large (min-width: 1440px);
+
+/* Extra Large: Ultra-wide monitors (1920px+) */
+@custom-media --xl (min-width: 1920px);
+
+/* Legacy aliases for gradual migration */
+@custom-media --sm (min-width: 600px);
+@custom-media --md (min-width: 1295px);
+@custom-media --lg (min-width: 1440px);

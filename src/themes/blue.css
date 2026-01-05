@@ -1,0 +1,20 @@
+/**
+ * Blue Theme - Corporate
+ * Professional blue for healthcare/enterprise applications
+ */
+
+/* Declare layer order */
+@layer reset, tokens, base;
+
+/* Reset layer */
+@import '../styles/reset.css' layer(reset);
+
+/* Tokens layer (tokens already include @layer tokens internally) */
+@import '../../../tokens/dist/tokens.css';
+@import '../../../tokens/dist/colors/blue.css';
+
+/* Custom media queries */
+@import '../styles/breakpoints.css';
+
+/* Base styles layer */
+@import '../styles/base-styles.css' layer(base);
